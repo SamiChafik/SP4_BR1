@@ -1,0 +1,108 @@
+$yellow-primary: #FFD700;
+$yellow-dark: #FFC000;
+$yellow-light: #FFF9C4;
+$dark-bg: #1A1A1A;
+$text-light: #F5F5F5;
+
+#div {
+    overflow: hidden;
+    background: linear-gradient(45deg, #000000, #441167, #520f78, #a479b1, #e0c2ed);
+    background-size: 400% 400%;
+    animation: wave 100s ease infinite;
+    color: $text-light;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+  @keyframes wave {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+.container {
+    max-width: 800px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.intro-text {
+    font-size: 1.5rem;
+    color: $yellow-light;
+    margin-bottom: 0.5rem;
+}
+
+.name {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: $yellow-primary;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $yellow-primary;
+    margin: 0.5rem 0;
+}
+
+.description {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 1.5rem 0;
+}
+
+.specialization {
+    font-size: 1.1rem;
+    color: $text-light;
+    margin: 1rem 0;
+}
+
+.current-role {
+    font-size: 1.1rem;
+    margin: 1rem 0 2rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.social-link {
+    color: $yellow-light;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.social-link:hover {
+    color: $text-light;
+}
+
+.social-link i {
+    margin-right: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.dot {
+    color: $yellow-primary;
+}
+
+@media (max-width: 768px) {
+    .name {
+        font-size: 2.5rem;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+}
