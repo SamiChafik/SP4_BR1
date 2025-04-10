@@ -1,0 +1,76 @@
+$colors: (
+  yellow-primary: #FFD700,  // Golden yellow
+  yellow-light: #FFF9C4,    // Light yellow
+  dark-bg: #1A1A1A,        // Dark background
+  text-light: #F5F5F5      // Light text
+);
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin responsive($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+#div {
+  overflow: hidden;
+  background: linear-gradient(45deg, #000000, #441167, #520f78, #a479b1, #e0c2ed);
+  background-size: 400% 400%;
+  animation: wave 100s ease infinite; 
+  color: map-get($colors, text-light);
+  line-height: 1.7;
+  padding-top: 80px;
+  margin: 0;
+  @include flex-center;
+  min-height: 100vh;
+}
+
+@keyframes wave {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.contact-container {
+    max-width: 1600px;
+    padding: 0rem 3rem 0rem 3rem;
+    margin-bottom: 2rem;
+    background: rgba(30, 30, 30, 0.8);
+    border-radius: 15px;
+    border-left: 5px solid map-get($colors, yellow-primary);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    width: 800px;
+
+    .form-control {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 215, 0, 0.2);
+      color: white;
+      
+      &:focus {
+        border-color: #FFD700;
+        box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.25);
+      }
+      
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+    
+    .btn-warning {
+      background-color: #FFD700;
+      border: none;
+      font-weight: 600;
+      transition: all 0.3s;
+      
+      &:hover {
+        background-color: darken(#FFD700, 10%);
+        transform: translateY(-2px);
+      }
+    }
+  }
