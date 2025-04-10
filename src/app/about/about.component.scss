@@ -1,0 +1,100 @@
+$colors: (
+  yellow-primary: #FFD700,  // Golden yellow
+  yellow-light: #FFF9C4,    // Light yellow
+  dark-bg: #1A1A1A,        // Dark background
+  text-light: #F5F5F5      // Light text
+);
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin responsive($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+#div {
+  overflow: hidden;
+  background: linear-gradient(45deg, #000000, #441167, #520f78, #a479b1, #e0c2ed);
+  background-size: 400% 400%;
+  animation: wave 100s ease infinite; 
+  color: map-get($colors, text-light);
+  line-height: 1.7;
+  padding-top: 80px;
+  margin: 0;
+  @include flex-center;
+  min-height: 100vh;
+}
+
+@keyframes wave {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  padding: 2rem 3rem 2rem 3rem;
+  margin-bottom: 2rem;
+  background: rgba(30, 30, 30, 0.8);
+  border-radius: 15px;
+  border-left: 5px solid map-get($colors, yellow-primary);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+  // Responsive adjustments
+  @include responsive(768px) {
+    padding: 2rem;
+    margin: 1rem;
+  }
+}
+
+// Typography
+h1 {
+  color: map-get($colors, yellow-primary);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: map-get($colors, yellow-primary);
+  }
+
+  @include responsive(768px) {
+    font-size: 2rem;
+  }
+}
+
+p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+// Text elements
+strong {
+  color: map-get($colors, yellow-primary);
+  font-weight: 600;
+}
+
+.highlight {
+  background: rgba(map-get($colors, yellow-primary), 0.15);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+.emoji {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
