@@ -1,0 +1,63 @@
+$footer-bg: rgba(0, 0, 0, 0.7);
+$text-color: #f5f5f5;
+$yellow-accent: #FFD700;
+$icon-size: 1.5rem;
+
+.site-footer {
+  background: $footer-bg;
+  backdrop-filter: blur(8px);
+  padding: 1.5rem 0;
+  position: fixed; /* Makes footer stick to viewport */
+  bottom: 0; /* Anchors to bottom */
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensures footer stays above other content */ 
+  height: 25px;
+  display: flex;
+  /* Add these to ensure proper spacing for page content */
+  & + * {
+    margin-bottom: 80px; /* Prevents content from being hidden behind footer */
+  }
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .copyright {
+    color: $text-color;
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 1.5rem;
+
+    a {
+      color: $text-color;
+      font-size: $icon-size;
+      transition: all 0.3s ease;
+      width: $icon-size;
+      height: $icon-size;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        color: $yellow-accent;
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
