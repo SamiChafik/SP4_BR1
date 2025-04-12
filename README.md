@@ -30,6 +30,8 @@ Portfolio développé avec Angular 18+ mettant en valeur mes compétences et pro
 
 ## 🔗 Site déployé
 
+- https://profound-cucurucho-8195b4.netlify.app/
+
 ## 📸 Captures d'écran
 
 ![accueil](/screenshots/Screenshot%202025-04-13%20000313.png)
