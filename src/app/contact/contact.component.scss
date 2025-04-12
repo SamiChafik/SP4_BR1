@@ -21,7 +21,7 @@ $colors: (
   overflow: hidden;
   background: linear-gradient(45deg, #000000, #441167, #520f78, #a479b1, #e0c2ed);
   background-size: 400% 400%;
-  animation: wave 100s ease infinite; 
+  animation: wave 50s ease infinite; 
   color: map-get($colors, text-light);
   line-height: 1.7;
   padding-top: 80px;
