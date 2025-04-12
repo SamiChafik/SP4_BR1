@@ -1,27 +1,38 @@
-# MyPortfolio
+# MyPortfolio - Portfolio Professionnel
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.17.
+## 📌 Présentation du projet
+Portfolio développé avec Angular 18+ mettant en valeur mes compétences et projets.  
+**Fonctionnalités clés** :
+- ✅ Page d'accueil avec présentation personnelle
+- ✅ Section "À propos" détaillant parcours et compétences
+- ✅ Galerie de projets avec filtrage par technologies
+- ✅ Formulaire de contact avec validation
 
-## Development server
+## 🚀 Technologies utilisées
+- **Framework** : Angular 18.2.17
+- **Langages** : TypeScript, HTML, SCSS
+- **UI** : Bootstrap
+- **Hébergement** : Netlify
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## ⚙️ Instructions de lancement
 
-## Code scaffolding
+### Prérequis
+- Node.js v18+
+- Angular CLI 18+
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Installation
 
-## Build
+git clone https://github.com/SamiChafik/SP4_BR1
+cd SP4_BR1
+npm install -g @angular/cli
+ng serve --o
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## 🔗 Site déployé
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 📸 Captures d'écran
 
-## Running end-to-end tests
+![accueil](/screenshots/Screenshot%202025-04-13%20000313.png)
+![projets](/screenshots/Screenshot%202025-04-13%20000341.png)
+![contact](/screenshots/Screenshot%202025-04-13%20000411.png)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
