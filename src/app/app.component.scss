@@ -1,5 +1,18 @@
 div {
     display: flex;
     flex-direction: column;
-    background-color: black;
+    overflow: hidden;
+    background: linear-gradient(45deg, #000000, #441167, #520f78, #a479b1, #e0c2ed);
+    background-size: 400% 400%;
+    animation: wave 100s ease infinite; 
+    color: #F5F5F5;
+    
+    // @include flex-center;
+    min-height: 100vh;
+}
+    
+@keyframes wave {
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
 }
