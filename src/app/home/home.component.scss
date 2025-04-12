@@ -17,6 +17,12 @@ $text-light: #F5F5F5;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+
+    img {
+        width: 220px;
+        border-radius: 50%;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
 }
 
   @keyframes wave {
@@ -26,9 +32,9 @@ $text-light: #F5F5F5;
   }
 
 .container {
-    max-width: 800px;
+    max-width: 600px;
     padding: 2rem;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .intro-text {
