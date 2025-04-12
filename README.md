@@ -22,10 +22,10 @@ Portfolio développé avec Angular 18+ mettant en valeur mes compétences et pro
 
 ### Installation
 
-git clone https://github.com/SamiChafik/SP4_BR1
-cd SP4_BR1
-npm install -g @angular/cli
-ng serve --o
+- git clone https://github.com/SamiChafik/SP4_BR1
+- cd SP4_BR1
+- npm install -g @angular/cli
+- ng serve --o
 
 
 ## 🔗 Site déployé
