@@ -34,7 +34,7 @@ Portfolio développé avec Angular 18+ mettant en valeur mes compétences et pro
 
 ## 📸 Captures d'écran
 
-![accueil](/screenshots/Screenshot%202025-04-13%183945.png)
+![accueil](/screenshots/Screenshot%202025-04-20%20183945.png)
 ![projets](/screenshots/Screenshot%202025-04-13%20000341.png)
 ![contact](/screenshots/Screenshot%202025-04-13%20000411.png)
 
